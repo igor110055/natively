@@ -1,5 +1,7 @@
-import React, { FC, useContext } from 'react';
+import React, { FC, useContext, useEffect } from 'react';
 import { View, Text, Image, TouchableOpacity, ActivityIndicator, FlatList, RefreshControl } from 'react-native';
+
+import SplashScreen from 'react-native-splash-screen';
 
 import { CurrencyCard } from '../components/CurrencyCard';
 import { DataContext, ThemeContext } from '../context';
@@ -11,10 +13,14 @@ export const HomeScreen: FC = (): JSX.Element => {
 
     const { dataState } = useContext(DataContext);
     const { theme: { dark, shadowColor, colors: { text } } } = useContext(ThemeContext);
-    const { bin, isLoading, getCurrencies, paginateCurrencies } = useBinance();
+    const { bin, isLoading, getCurrencies, paginateCurrencies } = useBinance(); 
 
     const brand: string = '../assets/brand.png';
     const brandWhite: string = '../assets/brandwhite.png';
+
+    useEffect(() => {
+        SplashScreen.hide();
+    },[]);
 
     return ( 
 
