@@ -6,6 +6,7 @@ local.properties
 *.iml
 *.hprof
 node_modules/
+.vscode/
 npm-debug.log
 yarn-error.log
 buck-out/
