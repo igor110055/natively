@@ -2,6 +2,8 @@
 build/
 .idea
 .gradle
+.vscode/
+.vs
 local.properties
 *.iml
 *.hprof
