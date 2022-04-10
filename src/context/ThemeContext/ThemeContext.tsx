@@ -1,5 +1,5 @@
 import React, { FC, createContext, useEffect, useReducer, Reducer } from 'react';
-import { Appearance, AppState } from 'react-native';
+import { Appearance } from 'react-native';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 
 import type { ThemeContextProps, ThemeActions, ThemeState } from "../../types";

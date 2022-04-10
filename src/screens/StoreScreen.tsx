@@ -1,7 +1,7 @@
 import React, { FC } from 'react';
 import { View, Text, TextInput, Keyboard, TouchableWithoutFeedback, Button } from 'react-native';
 
-import { useFormChanger } from '../hooks/useFormChanger';
+import { useFormChanger } from '../hooks';
 import { storeStyles } from '../styles';
 
 export const StoreScreen: FC = (): JSX.Element => {

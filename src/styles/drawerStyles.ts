@@ -1,7 +1,6 @@
 import { StyleSheet } from "react-native";
 
 export const drawerStyles = StyleSheet.create({
-
     container: { height: '100%' },
     text: {
         paddingHorizontal: 10, 
