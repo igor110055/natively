@@ -33,6 +33,7 @@ export const CurrencyFlatList: FC = (): JSX.Element => {
 type CardProps = { currency: TBinance };
 
 const CurrencyCard: FC<CardProps> = ({ currency }): JSX.Element => {
+    
     const { theme: { colors: { text } } } = useContext( ThemeContext );
 
     return (

@@ -6,7 +6,7 @@ import { storeStyles } from '../styles';
 
 export const StoreScreen: FC = (): JSX.Element => {
 
-    const { handleSubmit, input, setInput, text, dataState,} = useFormChanger();
+    const { handleSubmit, input, setInput, text, dataState } = useFormChanger();
 
     return (
         <TouchableWithoutFeedback onPress={Keyboard.dismiss}>

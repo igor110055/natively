@@ -17,8 +17,7 @@ export const DrawerNav: FC = (): JSX.Element => {
     return (
         <NavigationContainer theme={theme} >
             <Drawer.Navigator initialRouteName="HomeEvo" drawerContent={ 
-                    (props) => <DrawerMenu { ...props } /> 
-                }>
+                    (props) => <DrawerMenu { ...props } />}>
                 <Drawer.Screen name="Home" component={ HomeScreen } options={ homeOptions } />
                 <Drawer.Screen name="Store" component={ StoreScreen }  options={ storeOptions }  />
             </Drawer.Navigator>

@@ -1,4 +1,4 @@
-import { ThemeState, ThemeActions } from "../../types"
+import { ThemeState, ThemeActions } from "../../types";
 
 export const lightTheme: ThemeState = {
     currentTheme: 'light',

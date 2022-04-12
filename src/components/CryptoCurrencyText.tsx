@@ -7,7 +7,7 @@ export const CryptoCurrencyText: FC = (): JSX.Element => {
 
     const { theme: { colors: { text } } } = useContext( ThemeContext );
 
-    return <Text style={{ ...styles.text, color: text }}>Cryptocurrencies data</Text>
+    return <Text style={{ ...styles.text, color: text }}>Cryptocurrencies data</Text>;
     
 };
 
