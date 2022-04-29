@@ -16,7 +16,7 @@ yarn add global @react-native-community/cli
 
 ## Extra Packages
 
-- axios: Promise based HTTP client for Javascript
+- rxjs: Reactive Extensions Library for JavaScript
 - react-native-vector-icons: Icons pack for React Native
 - @react-native-async-storage/async-storage: Async storage like localStorage
 - @react-navigation/drawer: Drawer navigation
