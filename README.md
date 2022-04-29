@@ -6,7 +6,7 @@ A very simple template for React Native with essential packages and strict TypeS
 
 Is the best programming language for web. Made with ❤️ by
 
-![Alt text](src/assets//brandwhite.png?raw=true "Title")
+![Alt text](src/assets/brandwhite.png?raw=true "Title")
 
 ## CLI Tools
 
@@ -16,7 +16,7 @@ yarn add global @react-native-community/cli
 
 ## Extra Packages
 
-- axios: Promise based HTTP client for Javascript
+- rxjs: Reactive Extensions Library for JavaScript
 - react-native-vector-icons: Icons pack for React Native
 - @react-native-async-storage/async-storage: Async storage like localStorage
 - @react-navigation/drawer: Drawer navigation
