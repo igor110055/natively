@@ -10,9 +10,9 @@ LogBox.ignoreLogs([
 ]);
 
 export const App: FC = (): JSX.Element => (
-    <DataProvider>
-      <ThemeProvider>
-        <DrawerNav />
-      </ThemeProvider>
-    </DataProvider>
+  <DataProvider>
+    <ThemeProvider>
+      <DrawerNav />
+    </ThemeProvider>
+  </DataProvider>
 );
