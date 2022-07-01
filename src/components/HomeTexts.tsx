@@ -4,7 +4,7 @@ import { View, Text, StyleSheet } from 'react-native';
 import { DataContext, ThemeContext } from '../context';
 
 export const HomeTexts: FC = (): JSX.Element => {
-    
+
     const { theme: { colors: { text } } } = useContext(ThemeContext);
     const { dataState } = useContext(DataContext);
 
@@ -35,12 +35,12 @@ const styles = StyleSheet.create({
     },
     storeText: {
         textAlign: 'center',
-        paddingVertical: 15, 
+        paddingVertical: 15,
         fontSize: 18,
     },
     loveText: {
         textAlign: 'center',
-        paddingVertical: 15, 
+        paddingVertical: 15,
         fontSize: 18,
     }
 });

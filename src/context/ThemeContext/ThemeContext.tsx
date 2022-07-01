@@ -1,4 +1,4 @@
-import React, { FC, createContext, useEffect, useReducer, Reducer } from 'react';
+import React, { FC, createContext, useEffect, useReducer, Reducer, ReactNode } from 'react';
 import { Appearance } from 'react-native';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 
@@ -7,13 +7,13 @@ import { themeReducer, lightTheme, darkTheme } from './themeReducer';
 
 export const ThemeContext = createContext<ThemeContextProps>({} as ThemeContextProps );
 
-export const ThemeProvider: FC = ({ children }): JSX.Element => {
+export const ThemeProvider: FC<{children: ReactNode}> = ({ children }): JSX.Element => {
 
-    const [ theme, dispatch ] = useReducer<Reducer<ThemeState,ThemeActions>>( 
-        themeReducer, 
+    const [ theme, dispatch ] = useReducer<Reducer<ThemeState,ThemeActions>>(
+        themeReducer,
         Appearance.getColorScheme() === 'light' ? lightTheme : darkTheme
     );
-    
+
     const checkTheme = async() => {
         const themeKey = await AsyncStorage.getItem('theme');
         if (!themeKey) return;

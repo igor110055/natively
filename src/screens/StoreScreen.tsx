@@ -11,13 +11,13 @@ export const StoreScreen: FC = (): JSX.Element => {
     return (
         <TouchableWithoutFeedback onPress={Keyboard.dismiss}>
             <View style={storeStyles.container}>
-                <Text style={{ ...storeStyles.centeredText, color: text, fontSize: 40 }}> 
+                <Text style={{ ...storeStyles.centeredText, color: text, fontSize: 40 }}>
                     Store Example
                 </Text>
                 <Text style={{ ...storeStyles.centeredText, color: text, fontSize: 20, paddingTop: 15 }}>
                     Write anything in this form and send!
                 </Text>
-                <TextInput style={{...storeStyles.input, color: text, borderColor: text}} 
+                <TextInput style={{...storeStyles.input, color: text, borderColor: text}}
                         placeholder="here" placeholderTextColor="#adadad" onChangeText={setInput} value={input} />
                 <Button title="Submit" onPress={handleSubmit} />
                 {

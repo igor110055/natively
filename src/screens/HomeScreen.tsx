@@ -4,7 +4,7 @@ import SplashScreen from 'react-native-splash-screen';
 
 import { useOrientation } from '../hooks';
 
-import { CurrencyFlatList, LogoBubble, CryptoCurrencyText, 
+import { CurrencyFlatList, LogoBubble, CryptoCurrencyText,
         HomeTexts, ReactBubble } from '../components';
 import { homeStyles } from '../styles';
 
@@ -17,7 +17,7 @@ export const HomeScreen: FC = (): JSX.Element => {
     },[]);
 
     return (
-        <View style={ orientation === 'P' ? homeStyles.containerPortait 
+        <View style={ orientation === 'P' ? homeStyles.containerPortait
                         : homeStyles.containerLandscape}>
             <View style={ orientation === 'P' ? homeStyles.topContainerPortait
                         :  homeStyles.topContainerLandscape }>

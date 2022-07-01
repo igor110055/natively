@@ -6,7 +6,7 @@ export const storeStyles = StyleSheet.create({
         justifyContent: 'center',
         alignItems: 'center'
     },
-    input: { 
+    input: {
         height: 40,
         width: 250,
         margin: 12,

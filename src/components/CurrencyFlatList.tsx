@@ -10,20 +10,20 @@ const windowWidth = Dimensions.get('window').width;
 
 export const CurrencyFlatList: FC = (): JSX.Element => {
 
-    const { bin, isLoading, getCurrencies, paginateCurrencies } = useBinance(); 
-    
+    const { bin, isLoading, getCurrencies, paginateCurrencies } = useBinance();
+
     return (
         <View style={{ marginLeft: 15, paddingTop: 13, alignItems: 'center' }}>
             <FlatList data={bin} keyExtractor={ curr => curr.symbol }
-                renderItem={ ({item}) => <CurrencyCard currency={item} /> }  
+                renderItem={ ({item}) => <CurrencyCard currency={item} /> }
                 onEndReached={paginateCurrencies}
                 showsVerticalScrollIndicator={false}
                 numColumns={2}
-                refreshControl={ 
+                refreshControl={
                     <RefreshControl enabled refreshing={isLoading} onRefresh={getCurrencies} />
                 }
-                ListFooterComponent={ 
-                    <ActivityIndicator style={{ height: 100 }} size={20} color="grey" /> 
+                ListFooterComponent={
+                    <ActivityIndicator style={{ height: 100 }} size={20} color="grey" />
                 }
             />
         </View>
@@ -33,7 +33,7 @@ export const CurrencyFlatList: FC = (): JSX.Element => {
 type CardProps = { currency: TBinance };
 
 const CurrencyCard: FC<CardProps> = ({ currency }): JSX.Element => {
-    
+
     const { theme: { colors: { text } } } = useContext( ThemeContext );
 
     return (
