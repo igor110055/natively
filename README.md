@@ -6,7 +6,7 @@ A very simple template for React Native with essential packages and strict TypeS
 
 Is the best programming language for web. Made with ❤️ by
 
-![Alt text](src/assets/brandwhite.png?raw=true "Title")
+![Alt text](brandwhite.png?raw=true "Title")
 
 ## CLI Tools
 
