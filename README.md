@@ -11,7 +11,7 @@ Is the best programming language for web. Made with ❤️ by
 ## CLI Tools
 
 ``` powershell
-yarn add global @react-native-community/cli
+yarn add global react-native
 ```
 
 ## Extra Packages
@@ -25,8 +25,15 @@ yarn add global @react-native-community/cli
 
 ``` bash
 $ git clone https://github.com/victor7w7r/036react
-$ cd 036react
+$ cd natively
 $ git checkout blank
+```
+
+### If you have errors, please clean and build
+
+``` bash
+$ cd android
+$ ./gradleW clean build
 ```
 
 ### Run and Develop (Consider using yarn)
@@ -35,5 +42,6 @@ $ git checkout blank
 $ git clone https://github.com/victor7w7r/natively
 $ cd natively
 $ yarn install
-$ react-native run-android #Run develop in a virtual o physical device
+$ yarn start #Run Metro server
+$ yarn dev #Run develop in a virtual o physical device
 ```
