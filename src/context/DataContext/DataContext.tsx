@@ -1,4 +1,4 @@
-import React, { FC, createContext, useReducer, Reducer } from "react";
+import React, { FC, createContext, useReducer, Reducer, ReactNode } from "react";
 
 import type { DataContextProps, DataState, DataActions } from "../../types";
 import { DataReducer } from './dataReducer';
@@ -11,8 +11,8 @@ export const dataInitialState: DataState = {
 
 export const DataContext = createContext<DataContextProps>( {} as DataContextProps );
 
-export const DataProvider: FC = ({ children }): JSX.Element => {
-    
+export const DataProvider: FC<{children: ReactNode}> = ({ children }): JSX.Element => {
+
     const [dataState, dispatch] = useReducer<Reducer<DataState,DataActions>>(DataReducer, dataInitialState);
 
     const success = (data: string) => {

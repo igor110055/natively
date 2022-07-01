@@ -11,8 +11,6 @@ LogBox.ignoreLogs([
 
 export const App: FC = (): JSX.Element => (
   <DataProvider>
-    <ThemeProvider>
-      <DrawerNav />
-    </ThemeProvider>
+    <ThemeProvider><DrawerNav /></ThemeProvider>
   </DataProvider>
 );

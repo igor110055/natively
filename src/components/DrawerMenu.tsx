@@ -17,7 +17,7 @@ export const DrawerMenu: FC<DrawerContentComponentProps> = ({ navigation }): JSX
     const { setDarkTheme, setLightTheme, theme: { dark, colors: { text } } } = useContext( ThemeContext );
 
     const themeToggler = (): void => {
-        dark ? setLightTheme() : setDarkTheme()
+        dark ? setLightTheme() : setDarkTheme();
     };
 
     return (

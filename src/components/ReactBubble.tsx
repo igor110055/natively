@@ -10,7 +10,7 @@ export const ReactBubble: FC = (): JSX.Element => {
     return (
         <View style={{ ...styles.container, shadowColor }}>
             <TouchableOpacity>
-                <View style={{ ...styles.bubbles, borderColor: text }}> 
+                <View style={{ ...styles.bubbles, borderColor: text }}>
                     <Image source={require('../assets/logo.png')} style={styles.reactImageBubble}/>
                     <Text style={{ ...styles.text, color: text }}>
                         React Native + TS Template
@@ -24,7 +24,7 @@ export const ReactBubble: FC = (): JSX.Element => {
 const styles = StyleSheet.create({
     container: {
         marginHorizontal: '25%',
-        width: '50%', 
+        width: '50%',
         paddingTop: 5,
         borderRadius: 30,
         backgroundColor: 'transparent',
@@ -43,10 +43,10 @@ const styles = StyleSheet.create({
         paddingVertical: 15,
     },
     reactImageBubble: {
-        width: 35, 
-        marginVertical: 8, 
-        paddingRight: 60, 
-        height: 35, 
-        resizeMode: 'contain' 
+        width: 35,
+        marginVertical: 8,
+        paddingRight: 60,
+        height: 35,
+        resizeMode: 'contain'
     }
 });

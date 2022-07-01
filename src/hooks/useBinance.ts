@@ -12,7 +12,7 @@ export const useBinance = () => {
     const [ allbin, setAllBin ] = useState<TBinance[]>();
     const [ isLoading, setIsLoading ] = useState<boolean>(true);
     const [ position, setPosition ] = useState<number>(0);
-    
+
     useEffect(() => {
         getCurrencies();
         return(() => subscription.unsubscribe());
@@ -20,7 +20,7 @@ export const useBinance = () => {
 
     const getCurrencies = (): void => {
         setIsLoading(true);
-        subscription = binanceAll$.subscribe( data => { 
+        subscription = binanceAll$.subscribe( data => {
             setAllBin(data);
             setBin(data.slice(0, 40));
             setPosition(40);

@@ -7,11 +7,11 @@ export interface ThemeState extends Theme {
 };
 
 export type ThemeContextProps = {
-    theme: ThemeState; 
+    theme: ThemeState;
     setDarkTheme: () => void;
     setLightTheme: () => void;
 };
 
-export type ThemeActions = 
+export type ThemeActions =
     | { type: 'light_theme' }
     | { type: 'dark_theme' };

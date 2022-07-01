@@ -29,7 +29,6 @@ LOCAL_SHARED_LIBRARIES := \
   libfabricjni \
   libfbjni \
   libfolly_futures \
-  libfolly_json \
   libglog \
   libjsi \
   libreact_codegen_rncore \

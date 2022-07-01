@@ -8,7 +8,7 @@ export const CryptoCurrencyText: FC = (): JSX.Element => {
     const { theme: { colors: { text } } } = useContext( ThemeContext );
 
     return <Text style={{ ...styles.text, color: text }}>Cryptocurrencies data</Text>;
-    
+
 };
 
 const styles = StyleSheet.create({
@@ -16,6 +16,6 @@ const styles = StyleSheet.create({
         textAlign: 'center',
         fontSize: 30,
         paddingVertical: 15,
-        paddingTop: '5%' 
+        paddingTop: '5%'
     }
 });

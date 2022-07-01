@@ -12,6 +12,6 @@ export const DataReducer = (state: DataState, action: DataActions): DataState =>
         case 'DATA_SEND_FAIL':
             return { ...state, data: action.payload, loading: false};
 
-        default: return state;  
+        default: return state;
     }
 };

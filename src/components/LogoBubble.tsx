@@ -11,13 +11,13 @@ const brandWhite: string = '../assets/brandwhite.png';
 export const LogoBubble: FC<FlexProp> = ({ flexNumber }): JSX.Element => {
 
     const { theme: { dark, shadowColor, colors: { text } } } = useContext(ThemeContext);
-    
+
     return (
         <View style={{ flex: flexNumber }}>
             <TouchableOpacity>
                 <View style={{ ...styles.container, shadowColor}}>
-                    <View style={ {...styles.bubbles, borderColor: text }}> 
-                        <Image source={ dark ? require(brandWhite): require(brand)} 
+                    <View style={ {...styles.bubbles, borderColor: text }}>
+                        <Image source={ dark ? require(brandWhite): require(brand)}
                             style={ styles.logoImageBubble }/>
                     </View>
                 </View>
@@ -29,7 +29,7 @@ export const LogoBubble: FC<FlexProp> = ({ flexNumber }): JSX.Element => {
 const styles = StyleSheet.create({
     container: {
         marginHorizontal: '25%',
-        width: '50%', 
+        width: '50%',
         paddingTop: 5,
         borderRadius: 30,
         backgroundColor: 'transparent',
@@ -48,10 +48,10 @@ const styles = StyleSheet.create({
         paddingVertical: 15,
     },
     logoImageBubble: {
-        marginVertical: -20, 
-        marginHorizontal: '7%', 
-        width: 250, 
-        height: 100, 
+        marginVertical: -20,
+        marginHorizontal: '7%',
+        width: 250,
+        height: 100,
         resizeMode: 'contain'
     }
 });

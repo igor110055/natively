@@ -10,11 +10,10 @@ export const useFormChanger = () => {
     const { theme: { dark, colors: { text } } } = useContext(ThemeContext);
 
     const handleSubmit = (): void => {
-        input === "" 
+        input === ""
             ? Alert.alert('Error', 'Is empty your textInput')
             : success(input);
     };
 
     return { handleSubmit, setInput, input , text, dataState, dark };
-
 };
